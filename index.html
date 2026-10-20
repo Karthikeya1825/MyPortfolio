@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Karthikeya Kondaveeti — Machine Learning & Full-Stack Engineer</title>
+    <meta name="title" content="Karthikeya Kondaveeti — Machine Learning & Full-Stack Engineer" />
+    <meta name="description" content="Personal portfolio of Karthikeya Kondaveeti, CS undergraduate at SRM University AP focused on applied machine learning, computer vision, and full-stack systems. Seeking Master's programmes in Computer Science, Machine Learning, or Data Science." />
+    <meta name="keywords" content="Karthikeya Kondaveeti, Machine Learning, Computer Vision, Full Stack Developer, SRM University AP, PyTorch, React, Node.js, FastAPI" />
+    <meta name="author" content="Karthikeya Kondaveeti" />
+    <meta name="theme-color" content="#0b0e1b" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://karthikeyask.dev/" />
+    <meta property="og:title" content="Karthikeya Kondaveeti — ML & Full-Stack Engineer" />
+    <meta property="og:description" content="Applied Machine Learning, Computer Vision & Full-Stack Engineer seeking Master's programmes." />
+    <meta property="og:image" content="/logo.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Karthikeya Kondaveeti — ML & Full-Stack Engineer" />
+    <meta property="twitter:description" content="Applied Machine Learning, Computer Vision & Full-Stack Engineer seeking Master's programmes." />
+    <meta property="twitter:image" content="/logo.jpg" />
+
+    <!-- Favicon: User's provided avatar logo -->
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+
+    <!-- Claude Typography: Newsreader (Editorial Serif) + Inter (Clean Sans) + JetBrains Mono (Code/Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+
+    <!-- Theme script -->
+    <script>
+      (function() {
+        try {
+          const stored = localStorage.getItem('theme');
+          const isDark = stored ? stored === 'dark' : true;
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#0b0e1b] text-slate-100 dark:bg-[#0b0e1b] dark:text-slate-100 transition-colors duration-200 font-sans antialiased overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

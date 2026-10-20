@@ -1,81 +1,96 @@
-# Karthikeya Kondaveeti — Personal Portfolio
+# Karthikeya Kondaveeti
 
-A clean, modern, single-page personal portfolio for **Karthikeya Kondaveeti**, Computer Science undergraduate at SRM University AP focused on applied Machine Learning, Computer Vision, and full-stack engineering (MERN).
-
-Designed with editorial Claude-style typography, solid colors from a curated palette, zero gradients, zero emojis, and zero AI slop.
-
----
-
-## 🎨 Color Palette & Typography
-
-- **Deep Indigo**: `#1F06AC` (rgb(31, 6, 172))
-- **Cobalt Blue**: `#0F42C0` (rgb(15, 66, 192))
-- **Cornflower Blue**: `#5882E8` (rgb(88, 130, 232))
-- **Chartreuse Accent**: `#E3EF4F` (rgb(227, 239, 79))
-- **Background**: `#0b0e1b` (Near-black navy)
-- **Zero Gradients**: Pure solid colors, clean borders, crisp contrast.
-- **Claude Typography**: 
-  - Headings & Editorial Accents: **Newsreader** (Classical Editorial Serif)
-  - Body & UI: **Inter** (Clean Humanist Sans)
-  - Code & Badges: **JetBrains Mono** (Engineered Monospace)
+**Computer Science Undergraduate | Applied Machine Learning & Computer Vision | Full-Stack Developer**  
+Guntur, India • [kondaveeti444@gmail.com](mailto:kondaveeti444@gmail.com) • [github.com/Karthikeya1825](https://github.com/Karthikeya1825)
 
 ---
 
-## ⚡ Tech Stack
+## Summary
 
-- **Framework**: React 19 + Vite 6
-- **Styling**: Tailwind CSS v4 + Vanilla CSS Design System
-- **Interactions**: Framer Motion
-- **Icons**: Lucide React & Clean SVGs (Zero Emojis)
-- **Signature Bubble Effect**: 60fps Canvas particle engine utilizing exact palette colors `#1F06AC`, `#0F42C0`, `#5882E8`, and `#E3EF4F`
-- **Logo**: User's provided Sanji avatar logo (`/logo.jpg`)
-- **Resume**: Interactive Resume Viewer modal + direct PDF opener (`/resume.pdf`)
+Computer Science undergraduate at SRM University AP with a focus on applied machine learning and computer vision, backed by full-stack development experience (MERN). Experienced in building systems spanning video-based incident detection, multimodal retrieval-augmented generation (RAG), and geospatial forecasting. Currently researching portion-aware food calorie estimation from single images using foundation segmentation and monocular depth models.
+
+**Objective**: Seeking a Master's programme in Computer Science, Machine Learning, or Data Science.
 
 ---
 
-## 🚀 Running Locally
+## Education
 
-```bash
-# Clone or navigate to the repository
-cd Portfolio
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-Visit [http://localhost:5173/](http://localhost:5173/) in your browser.
+**SRM University AP**, Amaravathi, India  
+*B.Tech. in Computer Science and Engineering* (Aug. 2023 – May 2027)  
+- Focus Areas: Deep Learning, Computer Vision, Data Structures & Algorithms, Operating Systems, Database Management Systems.
 
 ---
 
-## 📝 Editing Content
+## Technical Skills
 
-All textual content, project details, skills, certifications, and links are kept in a single file:
-👉 **[`src/data/content.js`](file:///d:/ML%20Projects/Portfolio/src/data/content.js)**
-
-### Updating Resume
-- Replace [`public/resume.pdf`](file:///d:/ML%20Projects/Portfolio/public/resume.pdf) with any updated version. Clicking the "Resume" button in the Navbar, Hero, or Footer automatically opens and renders it.
-
-### Updating Logo
-- Replace [`public/logo.jpg`](file:///d:/ML%20Projects/Portfolio/public/logo.jpg) with any updated image. It is loaded across the site and as the browser favicon.
+- **Programming Languages**: C++, Python, JavaScript, HTML/CSS, Java
+- **Machine Learning & Computer Vision**: PyTorch, YOLO, OpenCV, MediaPipe, XGBoost, Prophet, Retrieval-Augmented Generation (ChromaDB), Segment Anything (SAM), Depth Anything
+- **Web & Frameworks**: React.js, Node.js, Express.js, FastAPI, Streamlit, Tailwind CSS
+- **Databases**: MongoDB, MySQL
+- **Developer Tools**: Git, GitHub, VS Code, Jupyter Notebook
+- **Spoken Languages**: English, Telugu, Hindi, German (A1), French (A1)
 
 ---
 
-## 🌐 Deployment
+## Selected Projects
 
-### Deploying to Vercel
-1. Push this repository to GitHub.
-2. In Vercel, click "New Project" and import the repository.
-3. Build Command: `npm run build`, Output Directory: `dist`.
-4. Click Deploy.
+### Portion-Aware Calorie Estimation from Food Photos *(In progress)*
+*Python, PyTorch, Segment Anything, Depth Anything, FastAPI*
+- Developing a computer vision pipeline that segments distinct food items from meal photographs using foundation segmentation models.
+- Estimates 3D volumetric portion size by coupling monocular depth estimation with a physical scale reference.
+- Maps estimated volumes to caloric and macronutrient values referencing Indian Food Composition Tables (IFCT).
+- Evaluates against direct vision-language-model (VLM) zero-shot baselines, tailored for Indian meals with calibrated uncertainty intervals.
 
-### Deploying to Netlify
-1. Run `npm run build` locally.
-2. Drag and drop the `dist/` directory into Netlify, or link the GitHub repo with build command `npm run build` and publish directory `dist`.
+### Medical Report Explainer — Gemini Pro + RAG
+*Python, FastAPI, Gemini Pro, ChromaDB, Streamlit*
+- Built a multimodal clinical assistant that extracts diagnostic lab metrics, reference ranges, and medications from images/PDFs into structured JSON.
+- Designed a retrieval-augmented generation (RAG) pipeline over indexed WHO/ICMR clinical guidelines and verified pharmaceutical leaflets using ChromaDB.
+- Enforces strict attribution so that every explanation and simplified terminology carries verifiable source citations.
+
+### Road Incident Detection & Police Alert System
+*Python, YOLO, MediaPipe, PyTorch, OpenCV, FastAPI*
+- Built a real-time surveillance video pipeline detecting street fights and snatching incidents using multi-person tracking and pose features.
+- Integrated a spatio-temporal video action-recognition model with YOLO detection and MediaPipe skeletal estimation.
+- Designed temporal smoothing and confidence verification to suppress false positives in crowded feeds.
+- Automated instant incident snapshot and clip alerts to an emergency response dashboard via Telegram and Twilio APIs.
+
+### Road Damage & Waterlogging Monitor
+*Python, YOLO, GeoPandas, XGBoost, Prophet, Folium*
+- YOLO-based detector for road potholes, structural cracks, and waterlogged patches from vehicle dashcam footage.
+- Automated spatial alignment mapping defect coordinates to specific road segments using GeoPandas and OpenStreetMap vector data.
+- Built a rainfall-driven forecasting module (XGBoost/Prophet) to predict deterioration rates and flash flooding risks per road segment.
+- Interactive Folium choropleth mapping interface for municipal road maintenance planning.
+
+### Folio — Online Book Reading Platform
+*React, Node.js, Express, MongoDB, Tailwind CSS, Framer Motion*
+- Full-stack reading platform featuring secure JWT authentication, refresh token rotation, and customizable typography reader (themes, line heights, font sizing).
+- Real-time cross-device progress synchronization, bookmarks, and highlight annotations.
+- Pre-seeded with 10 full-text classic books and an indexed 35-title catalogue curated from Project Gutenberg.
+- Hardened with Zod schema validation, API rate limiting, admin dashboard, and unit/integration tests.
 
 ---
 
-## 📄 License
-MIT © 2026 Karthikeya Kondaveeti
+## Experience
+
+### Full-Stack Development Intern
+**Edunet Foundation** *(Remote)* | 2025
+- Developed an end-to-end goal tracking application using Node.js, Express.js, and MongoDB.
+- Designed and documented RESTful API endpoints for milestone management, progress tracking, and authentication.
+- Architected MongoDB database schemas with indexing and data validation rules for reliable query performance.
+- Built a responsive frontend using HTML, CSS, and modern JavaScript for cross-device accessibility.
+
+---
+
+## Certifications
+
+- **Oracle Certified Professional: Java SE 17 Developer** — Oracle (Score: 82%)
+- **MongoDB Certified Associate Developer** — MongoDB (2026)
+- **Full-Stack Development Internship Certification** — Edunet Foundation (2025)
+
+---
+
+## Contact
+
+- **Email**: [kondaveeti444@gmail.com](mailto:kondaveeti444@gmail.com)
+- **GitHub**: [github.com/Karthikeya1825](https://github.com/Karthikeya1825)
+- **Location**: Guntur, Andhra Pradesh, India

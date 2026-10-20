@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BubbleBurst } from './components/BubbleBurst';
+import { VisionGridBackground } from './components/VisionGridBackground';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -17,11 +18,14 @@ export function App() {
   return (
     <BubbleBurst>
       <div className="relative min-h-screen bg-[#0b0e1b] text-slate-100 transition-colors duration-200 selection:bg-[#E3EF4F] selection:text-[#0b0e1b]">
+        {/* Computer Vision & Machine Learning Schematic Grid Background */}
+        <VisionGridBackground />
+
         {/* Navigation Bar */}
         <Navbar onOpenResume={() => setIsResumeOpen(true)} />
         
         {/* Main Content Sections */}
-        <main id="main-content">
+        <main id="main-content" className="relative z-10">
           <Hero onOpenResume={() => setIsResumeOpen(true)} />
           <About />
           <Skills />
@@ -32,7 +36,9 @@ export function App() {
         </main>
 
         {/* Footer */}
-        <Footer onOpenResume={() => setIsResumeOpen(true)} />
+        <div className="relative z-10">
+          <Footer onOpenResume={() => setIsResumeOpen(true)} />
+        </div>
 
         {/* High-Fidelity Resume Viewer & Downloader Modal */}
         <ResumeModal
